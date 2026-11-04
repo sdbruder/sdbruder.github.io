@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>localdev.it — Laser Stack</title>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=/laserstack/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230a0c10'/%3E%3Cpath d='M4 19 L20 5' stroke='%234ade80' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root { color-scheme: dark; --bg:#0a0c10; --fg:#e9edf3; --muted:#98a3b3; --accent:#4ade80; --line:#212832; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         display:flex; min-height:100vh; flex-direction:column; justify-content:center; padding:8vh 6vw; }
+  .wrap { max-width:46rem; }
+  .eyebrow { font:600 .8rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 1rem; }
+  h1 { font-size:clamp(1.8rem,5vw,2.6rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 1rem; font-weight:650; }
+  p { color:var(--muted); margin:0 0 1.5rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background:#151a22; border:1px solid var(--line); border-radius:6px; padding:.1em .35em; }
+  .links { display:flex; flex-wrap:wrap; gap:.6rem; }
+  .links a { border:1px solid var(--line); border-radius:10px; padding:.55rem .9rem; text-decoration:none; color:var(--fg); font-weight:600; font-size:.95rem; }
+  .links a:hover { border-color:var(--muted); }
+  .links a.primary { background:var(--accent); border-color:var(--accent); color:#06210f; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">localdev.it</p>
+  <h1>Laser Stack lives at <code>/laserstack/</code>.</h1>
+  <p>This domain is a catch-all: every name under it resolves to <code>127.0.0.1</code> and <code>::1</code>, which is why project names need no local DNS at all. The notes about that are one link away, and so is the stack.</p>
+  <div class="links">
+    <a class="primary" href="/laserstack/">Laser Stack documentation</a>
+    <a href="/catch-all-dns.html">The catch-all DNS notes</a>
+    <a href="https://github.com/sdbruder/laserstack">Source on GitHub</a>
+  </div>
+</div>
+<script>
+  if (location.pathname === "/" || location.pathname === "/index.html") { location.replace("/laserstack/"); }
+</script>
+</body>
+</html>
